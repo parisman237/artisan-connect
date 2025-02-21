@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtisanConnect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+        .header {
+            background: #1a73e8;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .search-bar {
+            padding: 15px;
+            background: white;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .categories {
+            padding: 10px;
+        }
+        .category-card {
+            background: white;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+        }
+        .category-icon {
+            width: 50px;
+            height: 50px;
+            background: #e3f2fd;
+            border-radius: 25px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+        }
+        .nav-item {
+            text-align: center;
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ArtisanConnect</h1>
+        <p>Find trusted artisans near you</p>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search for services...">
+    </div>
+
+    <div class="categories">
+        <div class="category-card" onclick="location.href='#plumbers'">
+            <div class="category-icon">🔧</div>
+            <div>
+                <h3>Plumbers</h3>
+                <p>15 available nearby</p>
+            </div>
+        </div>
+
+        <div class="category-card" onclick="location.href='#electricians'">
+            <div class="category-icon">⚡</div>
+            <div>
+                <h3>Electricians</h3>
+                <p>12 available nearby</p>
+            </div>
+        </div>
+
+        <div class="category-card" onclick="location.href='#carpenters'">
+            <div class="category-icon">🔨</div>
+            <div>
+                <h3>Carpenters</h3>
+                <p>8 available nearby</p>
+            </div>
+        </div>
+
+        <div class="category-card" onclick="location.href='#painters'">
+            <div class="category-icon">🎨</div>
+            <div>
+                <h3>Painters</h3>
+                <p>10 available nearby</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-bar">
+        <a href="#home" class="nav-item">🏠<br>Home</a>
+        <a href="#search" class="nav-item">🔍<br>Search</a>
+        <a href="#bookings" class="nav-item">📅<br>Bookings</a>
+        <a href="#profile" class="nav-item">👤<br>Profile</a>
+    </div>
+</body>
+</html>
